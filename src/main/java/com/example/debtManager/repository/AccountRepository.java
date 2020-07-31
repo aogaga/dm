@@ -1,8 +1,12 @@
 package com.example.debtManager.repository;
 
 import com.example.debtManager.model.Account;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface AccountRepository  extends JpaRepository<Account, Integer> {
+import java.util.List;
 
+@Repository
+public interface AccountRepository  extends CrudRepository<Account, Long> {
+ 
 }

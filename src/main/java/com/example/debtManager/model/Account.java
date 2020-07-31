@@ -16,8 +16,6 @@ public class Account {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long Id;
-
-  //private Bank bank;
   private String cardName;
   private BigDecimal accountBalance;
   private BigDecimal accountLimit;
